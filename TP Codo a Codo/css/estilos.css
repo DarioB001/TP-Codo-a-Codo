@@ -1,0 +1,314 @@
+html {
+    font-size: 62.5%;
+    background-color: #fffbdf;
+}
+* {
+    box-sizing: border-box;
+}
+/*FONTS*/
+
+p{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+}
+h2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+}
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}
+header a{
+    font-family: 'Fredoka One', cursive;
+}
+body {
+    margin-bottom: 5vh;
+}
+/*Menu Fijo Superior*/
+.menuFijo{
+    display: flex;
+    height:15vh;
+    justify-content: space-between;
+    margin: .5rem;
+    background-color: #f8efae;
+    border-radius: 1rem;
+    }
+.img-flag{
+    border-radius: 25%;
+    margin: 2rem ;
+    width:15vh;
+}
+
+.img-flag:hover{
+    opacity:0.6;
+    filter:alpha(opacity=30);
+    
+} 
+.menuFijo ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-self:center;
+    
+}
+.menuFijo li{
+    list-style: none;
+    margin: 2rem;
+}
+.menuFijo a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #da2813;
+    text-shadow: 1px 1px 1px gray;
+ }
+.menuFijo a:hover{
+	color: #ff8708;
+ }
+.menuFijo a:visited{
+    color: #000;
+}
+/*FIN Fijo Superior*/
+
+/*Menu centrado superior*/
+.menucentrado{
+	margin:0 auto; 
+	padding: 0 1em;
+    font-size: 2rem;
+}
+.menu-section{
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid hsl(0, 0%);
+    
+}
+.menu ul{
+	list-style-type: none; 
+	padding: 0;
+	margin:0;
+	background: #ff8708;
+    border-radius: 1rem;
+    
+}
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6rem 1rem;
+    text-shadow: 1px 1px 1px gray;
+
+}
+.menu li a:hover {
+	background: hsl(41, 95%, 76%);
+}
+.menu-simple ul{
+    margin-top: 2rem;
+	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-between;
+}
+				
+.menu-simple li{
+ 	flex:1 0 auto;
+ 	text-align: center;
+    flex-wrap: wrap;
+ }
+
+ @media (min-width: 420px) {
+    .a-radius-left{
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+    .a-radius-right{
+        border-radius: 0rem 1rem 1rem 0rem;
+    }
+ }
+ @media (max-width: 420px) {
+ #border-ciudad{
+    border-radius: 1rem 0rem 0rem 0rem;
+}
+#border-gastro{
+   border-radius: 0rem 1rem 0rem 0rem;     
+}
+#border-monumento{
+   border-radius: 0rem 0rem 1rem 1rem;  
+}
+.img-flag{
+    border-radius: 25%;
+    margin: 2rem ;
+    width:7vh;
+}
+}
+/*FIN - Menu centrado superior*/
+
+/*BODY INDEX*/
+
+.container-index {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+.columna1 img,.columna2 img,.columna3 img{
+    width: 100%;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+.columna1 img:hover,.columna2 img:hover,.columna3 img:hover{
+    opacity:0.6;
+    filter:alpha(opacity=30);
+}
+.columna1,.columna2,.columna3{
+    margin: 2px;
+}
+
+.animate__backInRight {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 2s;
+}
+/*FIN - BODY INDEX*/
+
+/*Monumentos Mapas*/
+.contenedormapas {
+    max-width: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+.contenedormapas h2 {
+    text-align: center;
+}
+.iframe-mapas{
+    border-radius: 10%;
+    display: flex;
+    align-content: center;
+    height: 30vh;
+    width: 30vh;
+    margin: auto;
+}
+
+/*FIN - Monumentos Mapas */
+/*FOOTER*/
+
+footer{
+    background-color: #ff8708;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top: 1rem;
+    height: 5vh;
+    border-radius: 1rem;
+    position:fixed; 
+    bottom: 0;
+    width:99%;
+}
+footer h3{
+    margin-left: 1rem;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-right: 1rem;
+}
+footer li{
+list-style: none;
+margin: 0rem 1rem 0rem 1rem;
+}
+footer li a:link{
+    color:black;
+}
+footer li a:hover{
+    color:hsl(41, 95%, 76%);
+}
+footer li a:visited{
+    color:black
+}
+/*transiciones*/
+.columna3>.transitions{
+    text-align: center;
+    font-size: 1rem;
+}
+.transitions {
+    width: 15rem;
+    height: 2rem;
+    background: #ff8708;
+    border-radius: 2rem;
+    transition: ease-in-out width 2s;
+}
+.transitions:hover {
+    width : 30rem;
+}
+@keyframes cambiodecolor {   
+    from { background: #ff8708; }    
+    to { background: hsl(41, 95%, 76%); }   
+} 
+.transitions2 {   
+    animation: cambiodecolor 2s linear infinite;
+} 
+/*Formulario*/
+label{
+    font-size: 1.5rem;
+    font-weight: bold;}
+/*@media*/
+@media (min-width: 480px) {
+    .dos-columnas-mapas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .menuFijo a{
+        text-decoration: none;
+        font-size: medium;
+        text-transform: uppercase;
+        text-shadow: 1rem black; 
+        color: #da2813;
+     }
+     .menucentrado{			
+		max-width: 80rem;
+	}
+}
+@media (min-width: 1000px) {
+    .columna1 {
+        width: 49%;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .columna2 {
+        width: 49%;
+        -webkit-order: 2;
+        order: 2;
+    }
+    .columna3 {
+        width: 100%;
+        -webkit-order: 3;
+        order: 3;
+    }
+    .columna3>.transitions{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .transitions {
+        width: 30rem;
+        height: 4rem;
+        background: #ff8708;
+        border-radius: 2rem;
+        transition: ease-in-out width 2s;
+    }
+    .transitions:hover {
+        width : 40rem;
+    } 
+    .iframe-mapas{
+        border-radius: 10%;
+        display: flex;
+        align-content: center;
+        height: 40vh;
+        width: 60vh;
+        margin: auto;
+    }   
+}
